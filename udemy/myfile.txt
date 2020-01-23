@@ -1,0 +1,6 @@
+Arquivo de texto para
+testes em escrita de
+arquivos em python.
+
+Teste de escrita.
+Teste de escrita.
