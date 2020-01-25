@@ -1,3 +1,6 @@
+# Importando funções de uma biblioteca
+from random import shuffle
+from random import randint
 
 mylist = [1, 2, 3]
 
@@ -12,6 +15,7 @@ list(range(0, 11, 2))
 
 word = "abcde"
 
+
 # Função enumerate retorna tuplas contendo o index
 # e o valor do index da 'lista' passada.
 # Essa tupla pode ser acessada usando a mesma função
@@ -19,6 +23,7 @@ word = "abcde"
 for index, letter in enumerate(word):
     pass
 #   print(f"{index}: {letter}")
+
 
 # Função zip retorna uma tupla contendo as listas
 # que foram passadas para serem 'zipadas' juntas
@@ -34,15 +39,47 @@ for item in zip(mylist1, mylist2, mylist3):
     pass
 #   print(item)
 
+
 # Operaror IN: verifica se está dentro da
 # lista e retorna um boolean
 #
 # False
 'x' in [1, 2, 3]
+# print('x' in [1, 2, 3])
+
 # True
 1 in [1, 2, 3]
-
-# print('x' in [1, 2, 3])
 # print(1 in [1, 2, 3])
 
+d = {'k1': 19}
+
+# True
+'k1' in d
+# print('k1' in d)
+
+# True
+19 in d.values()
+# print(19 in d.values())
+
+
+# Função min() e max(), retorna, respectivamente,
+# os valores minimos e maximos de uma lista
+mylist = [10, 20, 30, 40, 100]
+min(mylist)
+# print(min(mylist))
+
+max(mylist)
+# print(max(mylist))
+
+
+# Função shuffle(), 'bagunça' a lista passada
+mylist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+shuffle(mylist)
+# print(mylist)
+
+
+# Função randint(), retorna um número
+# aleatório no intervalo passado
+print(randint(0, 100))
 

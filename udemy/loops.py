@@ -52,5 +52,15 @@ d = {'k1': 1, 'k2': 2, 'k3': 3}
 # else:
 #   do something else
 
+x = 50
 
+while x < 5:
+    print("The current value of x is {}".format(x))
 
+    x += 1
+else:
+    print("X IS NOT LESS THAN 5")
+
+# break: interrompe o looping
+# continue: reinicia o looping
+# pass: não faz nada
