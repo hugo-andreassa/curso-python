@@ -81,5 +81,4 @@ shuffle(mylist)
 
 # Função randint(), retorna um número
 # aleatório no intervalo passado
-print(randint(0, 100))
-
+# print(randint(0, 100))
