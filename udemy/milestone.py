@@ -1,3 +1,6 @@
+from random import randrange
+
+
 def display_board(board):
     print('{0:^8} | {1:^8} | {2:^8}'.format("", "", ""))
     print('{0:^8} | {1:^8} | {2:^8}'.format(board[7], board[8], board[9]))
@@ -15,18 +18,18 @@ def display_board(board):
 
 
 def player_input():
-    player1 = ""
+    player = ""
     player2 = ""
 
-    while player1 != "X" and player1 != "O":
-        player1 = input("Please pick a marker 'X' or 'O': ")
+    while player != "X" and player != "O":
+        player = input("Please pick a marker 'X' or 'O': ")
 
-    if player1 == 'X':
+    if player == 'X':
         player2 = 'O'
     else:
         player2 = 'X'
 
-    return player1, player2
+    return player, player2
 
 
 def place_marker(board, marker, position):
@@ -35,10 +38,49 @@ def place_marker(board, marker, position):
     return board
 
 
-# display_board(['#', 'X', 'O', 'X', 'O', 'X', 'O', 'X', 'O', 'X'])
-# player = player_input()
-# print(player)
+def verifica_vencedor():
+    pass
+
+
+# Primeiro escolhe o jogador
+jogada_inicio = randrange(1, 3)
+player1 = ''
+player2 = ''
+
+if jogada_inicio == 1:
+    print("Jogador 1 começa!")
+    players = player_input()
+
+    player1 = players[0]
+    player2 = players[1]
+else:
+    print("Jogador 2 começa!")
+    players = player_input()
+
+    player2 = players[0]
+    player1 = players[1]
+
+# while not verifica_vencedor():
+
+
+# Depois faz a jogada
+# Mostra o quadro
+
+# Depois o outro jogador faz a jogada
+# Mostra o quadro
+
+# ...
+
+# Verifica quem ganhou ou se deu empate
+
+# Pergunta se quer jogar dnv
+
+# display_board()
+
+
+player1 = ''
+# players[0]
+
 
 test_board = place_marker(['#', '', '', '', 'O', '', '', 'X', 'O', ''], 'X', 3)
 display_board(test_board)
-
