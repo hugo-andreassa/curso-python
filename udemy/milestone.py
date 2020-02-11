@@ -38,7 +38,7 @@ def place_marker(board, marker, position):
     return board
 
 
-def verifica_vencedor():
+def verifica_vencedor(board, marker):
     pass
 
 
@@ -46,6 +46,8 @@ def verifica_vencedor():
 jogada_inicio = randrange(1, 3)
 player1 = ''
 player2 = ''
+ganhador = ''
+board_game = ['#', '', '', '', '', '', '', '', '', '']
 
 if jogada_inicio == 1:
     print("Jogador 1 começa!")
@@ -60,8 +62,8 @@ else:
     player2 = players[0]
     player1 = players[1]
 
-# while not verifica_vencedor():
-
+while ganhador != 0:
+    pass
 
 # Depois faz a jogada
 # Mostra o quadro
